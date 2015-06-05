@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html ng-app="OotbApp">
+
+
+	 <head>
+
+	   <title>OOTB</title>
+	    <meta charset="utf-8">
+    	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+    	<meta name="viewport" content="width=device-width, initial-scale=1">
+	   
+	   <!-- Latest compiled and minified CSS -->
+	   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+	    <link rel="stylesheet" href="style/ootbstyle.css">
+
+	   
+
+	 </head>
+
+
+
+	<body>
+
+       
+       <div class="navbar navbar-inverse" >
+	      
+	      <button class="navbar-toggle" data-toggle="collapse" data-target=".menuMobileCollapse">
+
+ 				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+	      </button>
+		  
+		  <nav class="collapse navbar-collapse menuMobileCollapse">
+	  			
+	  			<ul class="nav navbar-nav navbar-middle">
+
+	  					<li class="active"><a href="#">Home</a></li>
+	  					<li><a href="#">Page 1</a></li>
+	  					<li><a href="#">Page 2</a></li>
+	  					<li><a href="#">Contact us</a></li>
+				</ul>
+	  			
+	      </nav>
+
+		</div>
+
+      <h1></h1>
+      <div  ng-controller="StoreController as store">
+
+
+      		<ul >
+
+      				<li ng-repeat="product in store.products">
+
+      					<span>
+
+      						{{product.name}}
+
+      					</span>
+
+
+      				</li>
+
+      		</ul>
+
+
+      </div>
+       
+	 <section class="jumbotron ootb-main-content">
+	
+     <contactus></contactus>
+
+	</section>
+
+	       
+	   <!-- Scripts Section -->
+	   <script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
+	   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+	   <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.15/angular.min.js"></script>
+	   <script src="scripts/app.js"></script>
+	
+
+	</body>
+</html>
